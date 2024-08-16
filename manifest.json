@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Marketing Assessments",
+  "version": "1.0",
+  "description": "No options, no popup, just adds a strip to the top of every page with links to open the current page url in spyfu, siteliner, google rich-test, schema validator, google mobile-friendly test, google lighthouse, webaim wave accessibility test, and more.",
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ]
+    }
+  ]
+}
