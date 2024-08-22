@@ -25,6 +25,7 @@ javascript:var b=prompt("Business"), l=prompt("Location"); if(b){window.open('ht
   - [x] `background.js`
   - [x] `content.js`
   - [x] `content.css`
-  - [ ] `images/icon-128.png`
-  - [ ] `images/icon-16.png`
-  - [ ] `images/icon-48.png`
+  - [x] `images/icon-128.png`
+  - [x] `images/icon-16.png`
+  - [x] `images/icon-48.png`
+
