@@ -61,6 +61,10 @@ const mabarGetGoogleNAPSearchHref = () => {
 };
 
 function mabar_load(){
+  if (document.querySelector('.marketing-assessments-bar-container')) {
+    return;
+  }
+
   const barhtml =`<div class="marketing-assessments-bar-container">
     <div class="marketing-assessments-bar">
       <a href="https://www.spyfu.com/overview/domain?query=${location.hostname}" target="_blank" title="SpyFu"><img src="https://www.spyfu.com/next/raw_assets/favicon/favicon-16x16.png" alt="SpyFu"></a>
@@ -68,6 +72,7 @@ function mabar_load(){
       <a href="https://search.google.com/test/rich-results?url=${location.hostname}" target="_blank" title="Rich Results">🤑</a>
       <a href="https://validator.schema.org/#url=${location.hostname}" target="_blank" title="Schema Validator">🗂️</a>
       <a href="https://search.google.com/test/mobile-friendly?url=${location.hostname}" target="_blank" title="Mobile Friendly">📱</a>
+      <a href="https://pagespeed.web.dev/analysis?url=${encodeURIComponent(location.href)}" target="_blank" title="PageSpeed / Lighthouse">🚦</a>
       <a href="https://wave.webaim.org/report#/${location.hostname}" target="_blank" title="Wave Accessibility">♿️</a>
       <a href="https://web.archive.org/web/*/${location.href}" target="_blank" title="Wayback Machine">⏳</a>
       <a href="https://whois.com/whois/${location.hostname}" target="_blank" title="Whois">😳</a>
