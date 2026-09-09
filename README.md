@@ -1,5 +1,8 @@
 # A Chrome Extension for marketing assessments.
 
+> **Product page:** there is no live `hustlelaunch.com/assessment-toolbar` lander (404). This GitHub repository is the canonical product page. Do not advertise a hustlelaunch.com product URL for this extension.
+
+
 No options, no popup, just adds a strip to the top of every page with links to open the current page url in spyfu, siteliner, google rich-test, schema validator, google mobile-friendly test, google lighthouse, webaim wave accessibility test, and more.
 
 All Links:
